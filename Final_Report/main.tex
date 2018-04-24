@@ -542,7 +542,7 @@ contract Survey {
 		An other problem we had was to determine which questions we should take for the survey in the application. 
 		The application on the mobile phone should actually be a small survey for the employee to fill in with around 
 		5 minutes. But there are a lot of questions we have to ask in order to get useful data which can be 
-		compared with the data we got from the head of the companies.\\
+		compared with the data we got from the head of the companies. With enough participants, a random selection of questions 		for each employee could be a solution.\\
 		
 		% what indicators
 		A similar issue is to find fitting indicators that are best to display in the Radar-Chart-Diagram, that provides
@@ -593,9 +593,13 @@ contract Survey {
 		indexing gender-equality. This is our main idea but we haven't completed the implementation.\\
 		The application we use to do the survey has just an interface. This means that we should collect the data on 
 		the application and try to put the collected data onto the block-chain for further calculation processes.\\
-		And there are still different challenges to improve our E-voting system, such that we can guarantee data validity
-		as well as anonymity for the participant.
-	
+		We still did not come up with a perfect system to verify a persons identity, neither did we find a good solution to
+		this online. There are many different open challenges to improve our E-voting system, such that we can guarantee data 
+		validity as well as anonymity for the participant.
+		Every Survey that is submitted, corresponds to a block-chain transaction. This can get very expensive, since surveys can 
+		contain alot of data. Our idea was to store the Survey results on an IPFS storage and only transmit the hash over the 
+		block-chain. Therefore we need a greater understanding of IPFS and how to implement such a system into our application.
+		
 	\paragraph*{Disruptional Potential}
 		Our approach is revolutionary in the sense that our process is completely transparent and every step in our process
 		can be observed by the employee as well as by the investors.\\
